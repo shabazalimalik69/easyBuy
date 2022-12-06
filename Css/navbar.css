@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    /* border-radius: 10px; */
+    position: fixed;
+}
+#img{
+    width: 180px;
+    height: 50px;
+    border-radius: 60% 40% ;
+    padding-left: 10%;
+}
+#main_section{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+}
+#middle_section{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid; */
+}
+
+#right_section{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid; */
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+a:hover{
+    color: black;
+}
+#hamburgerBox{
+    display: none;
+}
+
+
+@media all and (min-width:650px) and (max-width:850px){
+    #img{
+        width: 100px;
+        height: 45px;
+        border-radius: 60% 40% ;
+        padding-left: 10%;
+    }
+}
+
+
+@media all and (min-width:0px) and (max-width:650px){
+    #navbar{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    #hamburger{
+        width: 10%;
+        height: 40px;
+        background-color: rgb(64, 94, 170);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        margin-right: 15px;
+        border-radius: 3px;
+    }
+    span{
+        width: 80%;
+        height:3px ;
+        background-color: rgb(97, 201, 41);
+    }
+    #main_section{
+        display: none;
+    }
+    #img{
+        width: 80px;
+        height: 40px;
+        border-radius: 60% 40% ;
+        padding-left: 10%;
+    }
+    #hamburgerBox{
+        width: 100%;
+        display: block;
+        position: absolute;
+        top:80px;
+        background-color: burlywood;
+    }
+    
+    #hamburgerBox>div>a{
+        color: black;
+        padding-left: 5%;
+    }
+    #hamburgerBox>div>a:hover{
+        color: blueviolet;
+    }
+    #hamburgerBox>div{
+     margin-top: 5px;
+    }
+    
+    /* #hamburgerBox{
+        display: none;
+    } */
+   
+}
