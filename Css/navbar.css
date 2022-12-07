@@ -1,118 +1,140 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-#navbar{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: cadetblue;
-    /* border-radius: 10px; */
-    position: fixed;
-}
-#img{
-    width: 180px;
-    height: 50px;
-    border-radius: 60% 40% ;
-    padding-left: 10%;
-}
-#main_section{
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    /* border: 1px solid red; */
-}
-#middle_section{
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-    /* border: 1px solid; */
-}
 
-#right_section{
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-    /* border: 1px solid; */
+*{
+	margin: 0;
+	padding:0 ;
+}
+.container{
+	width: 100%;
+	height: 80px;
+	background-color: teal;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+}
+.image{
+	width: 100px;
+	height: 60px;
+	position: absolute;
+	left: 30px;
+	top: 10px;
+	border-radius: 40px;
+}
+.navbar{
+	width: 60%;
+	display: flex;
+}
+.navbar ul{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.navbar>ul li{
+	list-style: none;
 }
 a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
 }
 a:hover{
-    color: black;
+	color: brown;
 }
-#hamburgerBox{
-    display: none;
+.logo{
+	position: relative;
+}
+.hamburger{
+width: 40px;
+height: 30px;
+position: absolute;
+top: 25px;
+left: 80%;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+display: none;
+}
+.hamburger:focus{
+	outline: none;
+	box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+.hamburger span{
+	width: 60%;
+	height: 2px;
+	background-color: rgb(57, 11, 11);
+	display: block;
+	margin: auto;
+	position: relative;
 }
 
-
-@media all and (min-width:650px) and (max-width:850px){
-    #img{
-        width: 100px;
-        height: 45px;
-        border-radius: 60% 40% ;
-        padding-left: 10%;
-    }
+.hamburger span::before,
+.hamburger span::after{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(57, 11, 11);
+	
 }
-
-
-@media all and (min-width:0px) and (max-width:650px){
-    #navbar{
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-    }
-    #hamburger{
-        width: 10%;
-        height: 40px;
-        background-color: rgb(64, 94, 170);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 6px;
-        margin-right: 15px;
-        border-radius: 3px;
-    }
-    span{
-        width: 80%;
-        height:3px ;
-        background-color: rgb(97, 201, 41);
-    }
-    #main_section{
-        display: none;
-    }
-    #img{
-        width: 80px;
-        height: 40px;
-        border-radius: 60% 40% ;
-        padding-left: 10%;
-    }
-    #hamburgerBox{
-        width: 100%;
-        display: block;
-        position: absolute;
-        top:80px;
-        background-color: burlywood;
-    }
-    
-    #hamburgerBox>div>a{
-        color: black;
-        padding-left: 5%;
-    }
-    #hamburgerBox>div>a:hover{
-        color: blueviolet;
-    }
-    #hamburgerBox>div{
-     margin-top: 5px;
-    }
-    
-    /* #hamburgerBox{
-        display: none;
-    } */
-   
+.hamburger span::before{
+	transform: translateY(-6px);
+}
+.hamburger span::after{
+	transform: translateY(6px);
+}
+.hamburger.active span::before{
+	transform: rotate(45deg);
+}
+.hamburger.active span::after{
+	transform: rotate(135deg);
+}
+.hamburger.active span{
+	background-color: transparent;
+}
+@media all and (min-width:100px) and (max-width:750px){
+	.container{
+		width:100%;
+	}
+	.hamburger{
+		display: block;
+	}
+	.navbar{
+		width: 100%;
+		padding:0;
+		max-height: 0px;
+		overflow: hidden;
+		visibility: hidden;
+	   background-color:teal;
+	   position: absolute;
+	   top: 80px;
+	}
+	.navbar ul{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	#home{
+		margin-top: 120px;
+	}
+	.navbar.open{
+		visibility: visible;
+	}
+	.navbar ul{
+		border-top:1px solid rgba(255,255,255,0.2);
+		height: 200px;
+	}
+	.navbar ul li{
+		display: block;
+		margin:0;
+	}
+	.image{
+		width: 80px;
+		height: 50px;
+		position: absolute;
+		left: 30px;
+		top: 15px;
+		border-radius: 40px;
+	}
 }
