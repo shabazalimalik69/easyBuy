@@ -5,7 +5,8 @@ document.getElementById("Navbar").innerHTML = navbar()
  const navToggler = document.querySelector(".hamburger");
  navToggler.addEventListener("click", navToggle);
 
- function navToggle() {
+function navToggle() {
+   console.log("clicked")
    navToggler.classList.toggle("active");
    const nav = document.querySelector(".navbar");
    nav.classList.toggle("open");

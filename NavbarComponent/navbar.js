@@ -9,10 +9,11 @@ const navbar = () => {
             </button>
             <nav class="navbar">
                <ul>
-                  <li><a href="home.html" id="home">Home</a></li>
+                  <li><a href="home.html" >Home</a></li>
+                  <li><a href="about.html" >About</a></li>
                   <li><a href="product.html">Products</a></li>
-                  <li><a class="signup" href="signup.html">Signup</a></li>
-                  <li><a  class="login" href="login.html">Login</a></li>
+                  <li><a href="signup.html">Signup</a></li>
+                  <li><a href="login.html">Login</a></li>
                   <li><a href="cart.html">Cart</a></li>
                </ul>
             </nav>

@@ -6,10 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp Page</title>
     <link rel="stylesheet" href="../Css/navbar.css">
+    <link rel="stylesheet" href="../Css/signup.css">
 </head>
 <body>
     <div id="Navbar"></div>
-    <div id="signup"></div>
+    <form action="form" id="form" >
+        <label for="name">Name</label><br/>
+        <input type="text" id="name" required placeholder="Enter your Name"><br/>
+        <label for="email">Email</label><br/>
+        <input type="email" id="email" required placeholder="Enter your Email"><br/>
+        <label for="password">Password</label><br/>
+        <input type="password" id="password" required placeholder="Enter your Password"><br/>
+        <label for="mobile">Mobile no.</label><br/>
+        <input type="mobile" id="mobile" required placeholder="Enter your Mobile"><br/>
+        <br>
+        <input type="submit" value="Submit" id="submit">
+    </form>
 </body>
 </html>
 <script src="../JavaScript/signup.js" type="module"></script>
