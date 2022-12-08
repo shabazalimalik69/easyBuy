@@ -43,6 +43,7 @@ let array = JSON.parse(localStorage.getItem("clientData")) || [];
       array.push(userArr);
       localStorage.setItem("clientData", JSON.stringify(array));
       alert("SignUp successfully");
+      window.location.href = "../html/login.html";
        document.getElementById("name").value = "";
        document.getElementById("email").value = "";
        document.getElementById("password").value = "";

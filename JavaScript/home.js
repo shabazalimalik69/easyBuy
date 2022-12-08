@@ -14,4 +14,10 @@ document.getElementById("Navbar").innerHTML = navbar()
    } else {
      nav.removeAttribute("style");
    }
- }
+}
+  let logout = document.getElementById("logout");
+  logout.addEventListener("click", logoutUser);
+  let loggedUser = JSON.parse(sessionStorage.getItem("loggedUser"));
+  function logoutUser() {
+    sessionStorage.removeItem(loggedUser);
+  }

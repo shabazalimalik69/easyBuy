@@ -19,7 +19,7 @@ document.getElementById("Navbar").innerHTML = navbar()
 form.addEventListener("submit", LoginData);
  
 let array = JSON.parse(localStorage.getItem("clientData"));
-let loggedUser = JSON.parse(localStorage.getItem("loggedUser")) || [];
+let loggedUser = JSON.parse(sessionStorage.getItem("loggedUser")) || [];
 
 
 function LoginData(e){
@@ -32,12 +32,12 @@ function LoginData(e){
     if (array[i].Email === email && array[i].Password===password) {
       flag = true;
       loggedUser.push(array[i]);
-      localStorage.setItem("loggedUser",JSON.stringify(loggedUser))
+      sessionStorage.setItem("loggedUser",JSON.stringify(loggedUser))
     }
   }
   if (flag) {
     alert("Login successfully");
-  //  window.location.href="../html/home.html"
+   window.location.href="../html/home.html"
     console.log(loggedUser);
   } else {
     alert("Enter correct credentials");
