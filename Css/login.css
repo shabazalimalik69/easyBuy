@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#Navbar {
+  margin-bottom: 80px;
+}
+#form {
+  border: 1px solid;
+  width: 30%;
+  height: 15vw;
+  margin: auto;
+  margin-top: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgb(102, 102, 192);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(70, 126, 190, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 1rem;
+}
+#form > label,
+#form > input {
+  font-size: clamp(0.4rem, 2vw, 1.3rem);
+  margin-left: 2vw;
+}
+#form > input{
+    width:20vw;
+}
+#create{
+    margin-left: 2vw;
+    padding-top: 2rem;
+    color: black; 
+}
