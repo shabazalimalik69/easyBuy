@@ -15,9 +15,32 @@ document.getElementById("Navbar").innerHTML = navbar()
      nav.removeAttribute("style");
    }
 }
-  let logout = document.getElementById("logout");
-  logout.addEventListener("click", logoutUser);
-  let loggedUser = JSON.parse(sessionStorage.getItem("loggedUser"));
-  function logoutUser() {
-    sessionStorage.removeItem(loggedUser);
+  
+ let carouselArr = [
+  '../images/Banner/img1.jpeg',
+  '../images/Banner/img2.jpeg',
+  '../images/Banner/img3.jpeg',
+  '../images/Banner/img4.jpeg',
+  '../images/Banner/img5.jpeg',
+  '../images/Banner/img6.jpeg',
+  "https://logan.nnnow.com/content/dam/nnnow-project/09-march-2022/Benefit_TopbannerDesktop(2).jpg",
+  "https://logan.nnnow.com/content/dam/nnnow-project/31-mar-2022/se/SC_Topbanner_Newatsephoradesktop.jpg",
+  "https://logan.nnnow.com/content/dam/nnnow-project/22-april-2022/ABH_TopBanner_ABHMattelipstickslaunchDESKTOP.gif",
+  "https://logan.nnnow.com/content/dam/nnnow-project/13-april-2022/se/Sephora_TopBanner_Summer,Sunshine&SPFDesktop.jpg",
+  "https://logan.nnnow.com/content/dam/nnnow-project/11-april-2022/SC_Homepage_Beautypowerforall_Desktop.jpg"
+ ];
+
+ let i = 0;
+const carouselFun = (i)=>{
+  let image = document.getElementById("slideImage");
+ image.setAttribute("src",carouselArr[i])
+}
+
+setInterval(() => {
+  if(i===carouselArr.length-1){
+    i=0
+  }else{
+    i++
   }
+  carouselFun(i)
+}, 3000);

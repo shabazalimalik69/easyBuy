@@ -1,4 +1,34 @@
-/* #home{
+body{
+    background-image: url('https://wallpaperaccess.com/full/632782.jpg')
+}
+#home{
+   
     height: 2000px;
-    position: relative;
-} */
+    /* position: relative; */
+}
+#Navbar {
+    margin-bottom: 130px;
+  }
+#slideImage{
+    display: block;
+    margin: auto;
+    width: 95%;
+    height: 550px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+@media all and (min-width:100px) and (max-width:750px){
+    #Navbar {
+        margin-bottom: 110px;
+      }
+    #slideImage{
+        display: block;
+        margin: auto;
+        width: 95%;
+        height: 250px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+    }
+    
+}
