@@ -4,33 +4,44 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-image: url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #Navbar {
   margin-bottom: 80px;
 }
 #form {
   border: 1px solid;
   width: 30%;
-  /* height: 15vw; */
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
   margin: auto;
   margin-top: 10rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: rgb(102, 102, 192);
+  background-color: rgb(162, 162, 215);
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(70, 126, 190, 0.65) 0px 4px 6px -1px,
+    rgba(73, 94, 118, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
+ opacity:0.75;
 }
 #form > label,
 #form > input {
   font-size: clamp(0.4rem, 2vw, 1.3rem);
   margin-left: 2vw;
 }
-#form > input{
-    width:20vw;
+#form > input {
+  width: 20vw;
+  margin-top:clamp(0.3rem, 2vw, 0.6rem);
+  margin-bottom:clamp(0.3rem, 2vw, 0.6rem);
 }
-#create{
-    margin-left: 2vw;
-    padding-top: 2rem;
-    color: black; 
+#create {
+  font-size: clamp(0.5rem, 2vw, 1.3rem);
+  margin-left: 2vw;
+  padding-top:clamp(0.3rem, 2vw, 0.6rem);
+  color: black;
 }

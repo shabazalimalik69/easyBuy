@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background-image: url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #Navbar {
   margin-bottom: 80px;
 }
@@ -14,11 +19,12 @@
   margin-top: 10rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: rgb(102, 102, 192);
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(70, 126, 190, 0.65) 0px 4px 6px -1px,
+   background-color: rgb(192, 102, 151);
+  box-shadow: rgba(142, 5, 72, 0.4) 0px 0px 0px 2px,
+    rgba(215, 35, 155, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-    border-radius: 1rem;
+  border-radius: 0.3rem;
+  opacity: 0.75;
 }
 #form > label,
 #form > input {
