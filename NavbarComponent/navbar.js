@@ -1,5 +1,4 @@
 const navbar = () => {
-  
     return ` 
       <div class="container">
             <div class="logo">
@@ -14,7 +13,6 @@ const navbar = () => {
                   <li><a href="product.html">Products</a></li>
                   <li><a href="signup.html">Signup</a></li>
                   <li><a href="login.html">Login</a></li>
-                  <li id="logout"><a href="#">Logout</a></li>
                   <li><a href="cart.html">Cart</a></li>
                </ul>
             </nav>
