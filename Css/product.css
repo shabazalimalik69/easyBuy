@@ -1,3 +1,71 @@
 body{
-    background-image: url('https://wallpaperaccess.com/full/632782.jpg')
+    background-image: url('https://img.freepik.com/free-vector/worldwide-connection-gray-background-illustration-vector_53876-61769.jpg?size=626&ext=jpg&ga=GA1.2.1529972519.1670516553')
+}
+#Navbar {
+    margin-bottom: 110px;
+  }
+#productContainer{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 60px;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+#productContainer>div{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+img{
+    border-radius: 10px;
+}
+h4,p{
+    text-align: center;
+    margin: 5px 0px 10px 0px;
+};
+.button1{
+ display: block;
+ margin: auto;
+ background-color: blue;
+}
+#sort_filter{
+    width: 50%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+#sortByPrice,#sortByTitle,#filterByBrand{
+    padding: 10px;
+    border-radius: 5px;
+}
+@media all and (min-width:426px) and (max-width:850px){
+    #productContainer{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+    #sort_filter{
+        width: 80%;
+        display: flex;
+        margin: auto;
+        justify-content: space-around;
+    }
+}
+@media all and (min-width:200px) and (max-width:750px){
+    #productContainer{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+    #sort_filter{
+        display: flex;
+        flex-direction: column;
+       margin-left: 100px;
+    }
 }

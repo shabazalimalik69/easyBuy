@@ -13,7 +13,7 @@ const navbar = () => {
                   <li><a href="product.html">Products</a></li>
                   <li><a href="signup.html">Signup</a></li>
                   <li><a href="login.html">Login</a></li>
-                  <li><a href="cart.html">Cart</a></li>
+                  <li id="cart"><a href="cart.html">Cart&nbsp&nbsp</a><p id='count'>0</p></li>
                </ul>
             </nav>
       </div>
