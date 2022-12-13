@@ -3315,7 +3315,7 @@
     title: "gasdf",
     price: 12309,
     description: "123123123",
-    images: [""],
+    images: ["https://api.lorem.space/image/fashion?w=640&h=480&r=4779"],
     category: {
       id: 1,
       name: "Clothes",

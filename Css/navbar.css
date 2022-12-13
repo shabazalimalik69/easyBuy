@@ -95,6 +95,19 @@ display: none;
 .hamburger.active span{
 	background-color: transparent;
 }
+#cart{
+	display: flex;
+}
+#cart>a{
+	margin-top: 4px;
+}
+#cart>p{
+	color: blanchedalmond;
+}
+#count{
+	margin-bottom: 10px;
+}
+
 @media all and (min-width:100px) and (max-width:750px){
 	.container{
 		width:100%;
