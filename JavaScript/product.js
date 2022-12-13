@@ -23,13 +23,17 @@ let cartArray = JSON.parse(localStorage.getItem('cartData')) || [];
   try {
     let res = await fetch('http://localhost:3000/products');
     let data = await res.json();
-    displayData(data)
+    console.log(data)
     document.getElementById('sortByPrice').addEventListener('click',()=>{
       sortByPriceFun(data)
+    });
+    document.getElementById('sortByName').addEventListener('click',()=>{
+      sortByNameFun(data)
     });
     document.getElementById('filterByBrand').addEventListener('click',()=>{
       filterByBrandFun(data)
     });
+    displayData(data)
   } catch (error) {
     console.log(error)
   }
@@ -54,17 +58,59 @@ let cartArray = JSON.parse(localStorage.getItem('cartData')) || [];
   }
  
  }
+ function sortByNameFun(data){
+   let sortedValue = document.getElementById('sortByName').value;
 
- function filterByBrandFun(data){
-  let filteredValue = document.getElementById('filterByBrand').value;
-  //console.log(filteredValue)
-  let filteredData = data.filter((el)=>{
-    return el.brand === (filteredValue)
-  });
-  displayData(filteredData)
+   if (sortedValue === "asc") {
+     let ascData = data.sort((a, b) => {
+              var x = a.title.toUpperCase();
+              var y = b.title.toUpperCase();
+       if (x > y) {
+         return 1;
+       }
+       if (x < y) {
+         return -1;
+       }
+       return 0;
+     })
+     console.log(ascData)
+     displayData(ascData)
+   }
+  else if(sortedValue==='desc'){
+    let descData = data.sort((a,b)=>{
+           var x = a.title.toUpperCase();
+           var y = b.title.toUpperCase();
+           if (x > y) {
+             return -1;
+           }
+           if (x < y) {
+             return 1;
+           }
+           return 0;
+    })
+    console.log(descData)
+    displayData(descData)
+  }
+ 
  }
- function displayData(data){
+
+function filterByBrandFun(data) {
+   
+  let filteredValue = document.getElementById('filterByBrand').value;
+  if (filteredValue === "default") {
+    displayData(data)
+  } else {
+    let filteredData = data.filter((el) => {
+      return el.brand === filteredValue
+    });
+    // console.log(filteredData);
+    displayData(filteredData)
+  }
+ }
+function displayData(data) {
+  //  console.log(data);
   let container = document.getElementById('productContainer');
+  container.innerHTML = "";
   data.map((el)=>{
     let div = document.createElement('div')
     let image = document.createElement('img');

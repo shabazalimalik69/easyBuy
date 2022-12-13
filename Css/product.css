@@ -34,7 +34,7 @@ h4,p{
     margin: auto;
     justify-content: space-around;
 }
-#sortByPrice,#sortByTitle,#filterByBrand{
+#sortByPrice,#sortByName,#filterByBrand{
     padding: 10px;
     border-radius: 5px;
 }
