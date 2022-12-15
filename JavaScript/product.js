@@ -141,10 +141,24 @@ function displayData(data) {
     container.append(div)
   })
  };
- function addCartFun(el){
-  cartArray.push(el);
-  localStorage.setItem('cartData',JSON.stringify(cartArray));
-  alert('Successfully Added')
+function addCartFun(el) {
+  el.quantity = 1;
+  console.log(cartArray[0].id)
+  console.log(cartArray)
+  let flag = true;
+  for (let i in cartArray) {
+    if (cartArray[i].id===el.id) {
+      flag = false;
+    }
+  }
+  if (flag) {
+    cartArray.push(el);
+     localStorage.setItem("cartData", JSON.stringify(cartArray));
+     alert("Successfully Added");
+  } else {
+     alert("Product is already in Cart");
+  }
+ 
  };
 
  
