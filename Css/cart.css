@@ -10,23 +10,9 @@ body {
   margin-bottom: 110px;
 }
 #cartContainer {
-  width: 90%;
-}
-table {
-  width: 90%;
-  margin: auto;
-}
-table > thead > tr {
-  background-color: rgb(15, 66, 66);
-  color: white;
-  height: 20px;
+  width: 100%;
 }
 
-td {
-  padding: 10px 0;
-  margin: auto;
-  text-align: center;
-}
 .button1 {
   display: block;
   margin: auto;
@@ -52,17 +38,58 @@ td {
   border: none;
 }
 
-/* img{
-    border-radius: 10px;
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  /* border: 10px solid green; */
 }
-h4,p{
-    text-align: center;
-    margin: 5px 0px 10px 0px;
-}; */
-/* #cartContainer>div>button {
-    background-color: yellow;
-    color: green;
-} */
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ 
+}
+
+table tr:nth-child(even) {
+  background-color: #8caacf;
+   margin: 10px 0px 10px 0px;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0468aa;
+  color: white;
+  text-align: center;
+}
+.quantity1{
+  margin: auto;
+  /* margin-bottom: 10px; */
+  margin: 0 2px 10px 2px;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(6, 6, 6);
+  border: none;
+}
+#totalAmount{
+  text-align: center;
+}
+img{
+  width:100px;
+  height:100px;
+}
 @media all and (min-width: 426px) and (max-width: 850px) {
   #cartContainer {
     width: 80%;
@@ -72,14 +99,68 @@ h4,p{
     margin: auto;
     /* border: 1px solid red; */
   }
+  /* table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+  } */
 }
 @media all and (min-width: 200px) and (max-width: 750px) {
   #cartContainer {
-    width: 80%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     margin: auto;
     /* border: 1px solid red; */
   }
+ 
+  table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    /* width: 100%; */
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: clamp(10px,1.5vw,20px);
+  }
+  .button1 {
+    display: block;
+    margin: auto;
+    margin-bottom:3px;
+    background-color: var(--redColor);
+    padding: 2px;
+    border-radius:6px;
+    color: white;
+    cursor: pointer;
+    font-size: smaller;
+  }
+  .button2 {
+    background-color: var(--greenColor);
+  }
+  img{
+    width:80px;
+    height:60px;
+  }
+  table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 4px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ 
+}
+table tr:nth-child(even) {
+  background-color: #8caacf;
+   margin: 5px 0px 5px 0px;
+}
+#brand,#brandHead{
+  display: none;
+}
+#totalAmount{
+  font-size: medium;
+}
 }

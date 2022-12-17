@@ -17,11 +17,15 @@ function navToggle() {
    }
  }
 
+ let cartQty =JSON.parse(localStorage.getItem("cartQuantity")) || [];
+//console.log(cartQty[0])
+document.getElementById("count").innerText = cartQty[0];
+
  document.getElementById('productContainer').addEventListener('click',getProductFun);
 let cartArray = JSON.parse(localStorage.getItem('cartData')) || [];
  async function getProductFun(){
   try {
-    let res = await fetch('http://localhost:3000/products');
+    let res = await fetch("https://easybuybackend-production.up.railway.app/products");
     let data = await res.json();
     console.log(data)
     document.getElementById('sortByPrice').addEventListener('click',()=>{
@@ -143,8 +147,8 @@ function displayData(data) {
  };
 function addCartFun(el) {
   el.quantity = 1;
-  console.log(cartArray[0].id)
-  console.log(cartArray)
+  // console.log(cartArray[0].id)
+  // console.log(cartArray)
   let flag = true;
   for (let i in cartArray) {
     if (cartArray[i].id===el.id) {
@@ -154,9 +158,13 @@ function addCartFun(el) {
   if (flag) {
     cartArray.push(el);
      localStorage.setItem("cartData", JSON.stringify(cartArray));
-     alert("Successfully Added");
+     setTimeout(() => {
+      alert("Successfully Added");
+     }, 100);
   } else {
-     alert("Product is already in Cart");
+    setTimeout(() => {
+      alert("Product is already in Cart");
+    },100);
   }
  
  };

@@ -34,3 +34,6 @@ body{
 #form > input{
     width:20vw;
 }
+#count{
+  display: none;
+}

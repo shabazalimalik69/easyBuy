@@ -1,0 +1,81 @@
+body{
+    background-image: url('https://img.freepik.com/free-vector/digital-rupee-currency-symbol-blue-background_1017-36518.jpg?w=2000');
+    background-size: cover;                     
+}
+
+#Navbar {
+    margin-bottom: 140px;
+  }
+
+  #form{
+
+    width: 18%;
+    display: flex;
+    margin: auto;
+    border: 1px solid;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    background-color: rgb(66, 235, 209);
+  }
+  input{
+    display: block;
+    margin: auto;
+    width: 115%;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  #submit{
+    width: 120%;
+    display: block;
+    margin: auto;
+  }
+  #title,#amount,#quantity{
+    text-align: center;
+    margin-bottom: 10px;
+    color:rgb(125, 196, 125)
+  }
+
+  @media all and (min-width: 426px) and (max-width: 850px) {
+    #form {
+      width:80%;
+      padding: 10px;
+      margin: auto;
+      /* border: 1px solid red; */
+    }
+    input{
+        display: block;
+        margin: auto;
+        width: 80%;
+        padding: 5px;
+        border-radius: 3px;
+      }
+      #submit{
+        width: 120%;
+        display: block;
+        margin: auto;
+      }
+  }
+  @media all and (min-width: 200px) and (max-width: 750px) {
+    #form {
+      display: block;
+        /* margin: auto; */
+      width: 80%;
+      padding: 20px;
+      margin: auto;
+      /* border: 1px solid red; */
+    }
+    input{
+        display: block;
+        margin: auto;
+        width: 80%;
+        padding: 5px;
+        border-radius: 3px;
+      }
+      #submit{
+        width: 80%;
+        display: block;
+        margin: auto;
+      }
+     
+  }

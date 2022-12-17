@@ -15,6 +15,9 @@ document.getElementById("Navbar").innerHTML = navbar()
      nav.removeAttribute("style");
    }
 }
+let cartQty =JSON.parse(localStorage.getItem("cartQuantity")) || [];
+//console.log(cartQty[0])
+document.getElementById("count").innerText = cartQty[0];
   
  let carouselArr = [
   '../images/Banner/img1.jpeg',

@@ -5,11 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Page</title>
-    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="../Css/payment.css">
     <link rel="stylesheet" href="../Css/navbar.css">
 </head>
 <body>
     <div id="Navbar"></div>
+    <div id="paymentContainer">
+        <h3 id="title"></h3>
+        <h4 id="quantity"></h4>
+        <h4 id="amount"></h4>
+        <div id="form">
+        <form>
+            <input required id="name" type="text" placeholder="Name....">
+            <br/>
+            <input required id="mobile" type="number" placeholder="Mobile....">
+            <br/>
+            <input required id="address" type="text" placeholder="Address...">
+            <br/>
+            <input required id="cardNumber" type="number" placeholder="Card Number...">
+            <br/>
+            <input required id="expiryDate" type="text" placeholder="Expiry Date....(mm/yy)">
+            <br/>
+            <input required id="cvv" type="password" placeholder="CVV....">
+            <br/>
+            <input id="submit" type="submit" value="submit">
+        </form>
+    </div>
+    </div>
     
 </body>
 </html>

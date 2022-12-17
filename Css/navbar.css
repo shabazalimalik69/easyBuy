@@ -104,14 +104,12 @@ display: none;
 #cart>p{
 	color: blanchedalmond;
 }
-#count{
-	margin-bottom: 10px;
-}
+
 
 @media all and (min-width:100px) and (max-width:750px){
-	.container{
+	/* .container{
 		width:100%;
-	}
+	} */
 	.hamburger{
 		display: block;
 	}

@@ -45,3 +45,6 @@ body {
   padding-top:clamp(0.3rem, 2vw, 0.6rem);
   color: black;
 }
+#count{
+  display: none;
+}
