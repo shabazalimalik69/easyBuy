@@ -11,6 +11,7 @@ body {
 }
 #cartContainer {
   width: 100%;
+ 
 }
 #signup{
     display: none;
@@ -49,6 +50,7 @@ table {
   width: 80%;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 100px;
   text-align: center;
   /* border: 10px solid green; */
 }
@@ -99,19 +101,12 @@ img{
   #cartContainer {
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     margin: auto;
     /* border: 1px solid red; */
   }
-  /* table {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 80%;
-    margin: auto;
-    margin-top: 50px;
-    text-align: center;
-  } */
+  
 }
 @media all and (min-width: 200px) and (max-width: 750px) {
   #cartContainer {
@@ -129,6 +124,7 @@ img{
     /* width: 100%; */
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 80px;
     text-align: center;
     font-size: clamp(10px,1.5vw,20px);
   }

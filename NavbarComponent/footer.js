@@ -1,17 +1,7 @@
 function footer() {
-    return `        <div id="footer">
+    return `<div id="footer">
             <div id="fcontainer">
-                <div id="top-s">
-                    <div>
-                        <p>ABOUT US</p>
-                    </div>
-                    <div>
-                        <p>SIGN UP AND SAVE</p>
-                    </div>
-                </div>
-
-
-                <div id="scontainer">
+               <div id="scontainer">
                     <div class="links">
                         <div><a href="">Contact Us</a></div>
                         <div><a href="">Frequently Asked Questions</a></div>
