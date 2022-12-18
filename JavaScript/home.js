@@ -1,7 +1,7 @@
 import {navbar} from "../NavbarComponent/navbar.js"
 document.getElementById("Navbar").innerHTML = navbar()
-import { footer } from "../NavbarComponent/footer.js";
-document.getElementById("footer").innerHTML = footer();
+
+
  const navToggler = document.querySelector(".hamburger");
  navToggler.addEventListener("click", navToggle);
 
@@ -14,6 +14,15 @@ document.getElementById("footer").innerHTML = footer();
    } else {
      nav.removeAttribute("style");
    }
+}
+let loginKey = JSON.parse(sessionStorage.getItem("loginKey"));
+function logOut() {
+  loginKey = false;
+  sessionStorage.setItem("loginKey", JSON.stringify(loginKey));
+  window.location.reload();
+}
+if (loginKey) {
+  document.getElementById("signOut").addEventListener("click", logOut);
 }
 let cartQty =JSON.parse(localStorage.getItem("cartQuantity")) || [];
 //console.log(cartQty[0])
