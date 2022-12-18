@@ -18,7 +18,16 @@ function navToggle() {
      nav.removeAttribute("style");
    }
  }
-let loginKey = JSON.parse(sessionStorage.getItem("loginKey"));
+ let loginKey = JSON.parse(sessionStorage.getItem("loginKey"));
+ function logOut() {
+   //console.log("Click")
+   loginKey = false;
+   sessionStorage.setItem("loginKey", JSON.stringify(loginKey));
+   window.location.reload();
+ }
+ if (loginKey) {
+   document.getElementById("signOut").addEventListener("click", logOut);
+ }
  let cartQty =JSON.parse(localStorage.getItem("cartQuantity")) || [];
 //console.log(cartQty[0])
 document.getElementById("count").innerText = cartQty[0];

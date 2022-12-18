@@ -22,6 +22,15 @@ let cartArray = JSON.parse(localStorage.getItem("cartData"));
 let paymentArray = JSON.parse(localStorage.getItem("paymentData")) || [];
 let cartQuantity = JSON.parse(localStorage.getItem("cartQuantity")) || [];
 let loginKey = JSON.parse(sessionStorage.getItem("loginKey"));
+function logOut() {
+  //console.log("Click")
+  loginKey = false;
+  sessionStorage.setItem("loginKey", JSON.stringify(loginKey));
+  window.location.reload();
+}
+if (loginKey) {
+  document.getElementById("signOut").addEventListener("click", logOut);
+}
 
 if (loginKey) {
   displayCartData(cartArray);

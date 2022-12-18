@@ -23,18 +23,10 @@ form.addEventListener("submit", LoginData);
 let array = JSON.parse(localStorage.getItem("clientData"));
 let loggedUser = JSON.parse(sessionStorage.getItem("loggedUser")) || [];
 let loginKey = JSON.parse(sessionStorage.getItem("loginKey"));
-// if (loginKey) {
-//   document.getElementById("signOut").addEventListener("click", signOutFun);
-  // function logOut() {
-  //   console.log("logout");
-  //   loginKey = false;
-  //   sessionStorage.setItem("loginKey", JSON.stringify(loginKey));
-  // }
-// }
 
 function LoginData(e) {
   e.preventDefault();
-  console.log("hi");
+  //console.log("hi");
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
   let flag = false;
@@ -50,7 +42,7 @@ function LoginData(e) {
     loginKey=true;
     sessionStorage.setItem("loginKey", JSON.stringify(loginKey));
      window.location.href="../html/home.html"
-    console.log(loggedUser);
+    //console.log(loggedUser);
   } else {
     alert("Enter correct credentials");
     document.getElementById("email").value = "";
