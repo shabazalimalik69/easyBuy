@@ -1,6 +1,19 @@
 import { navbar } from "../NavbarComponent/navbar.js";
 document.getElementById("Navbar").innerHTML = navbar();
 
+// let loginKey = JSON.parse(sessionStorage.getItem("loginKey"));
+
+let x = document.getElementById("signOut");
+x.addEventListener("click", signOutFun);
+console.log(x);
+if (loginKey) {
+  console.log(loginKey);
+  function signOutFun() {
+    loginKey = false;
+    sessionStorage.setItem("loginKey", JSON.stringify(loginKey));
+  }
+}
+
 import { footer } from "../NavbarComponent/footer.js";
 document.getElementById("footer").innerHTML = footer();
 
@@ -23,14 +36,17 @@ form.addEventListener("submit", LoginData);
 let array = JSON.parse(localStorage.getItem("clientData"));
 let loggedUser = JSON.parse(sessionStorage.getItem("loggedUser")) || [];
 let loginKey = JSON.parse(sessionStorage.getItem("loginKey"));
-if (loginKey) {
-  document.getElementById("signOut").addEventListener("click", signOutFun);
-  function signOutFun() {
-    console.log("logout");
-    loginKey = false;
-    sessionStorage.setItem("loginKey", JSON.stringify(loginKey));
-  }
-}
+
+// let x = document.getElementById("signOut")
+//   x.addEventListener("click", signOutFun);
+// console.log(x);
+// if (loginKey) {
+//   console.log(loginKey)
+//   function signOutFun() {
+//     loginKey = false;
+//     sessionStorage.setItem("loginKey", JSON.stringify(loginKey));
+//   }
+// }
 
 function LoginData(e) {
   e.preventDefault();
