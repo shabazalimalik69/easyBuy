@@ -16,7 +16,7 @@ function navToggle() {
      nav.removeAttribute("style");
    }
  }
-
+let loginKey = JSON.parse(sessionStorage.getItem("loginKey"));
  let cartQty =JSON.parse(localStorage.getItem("cartQuantity")) || [];
 //console.log(cartQty[0])
 document.getElementById("count").innerText = cartQty[0];
@@ -41,8 +41,12 @@ let cartArray = JSON.parse(localStorage.getItem('cartData')) || [];
   } catch (error) {
     console.log(error)
   }
+}
+if (loginKey) {
+  getProductFun();
+} else {
+  window.location.href="login.html"
  }
- getProductFun();
 
  function sortByPriceFun(data){
   let sortedValue = document.getElementById('sortByPrice').value;

@@ -19,7 +19,7 @@ form.addEventListener("submit", LoginData);
 
 let array = JSON.parse(localStorage.getItem("clientData"));
 let loggedUser = JSON.parse(sessionStorage.getItem("loggedUser")) || [];
-
+let loginKey = JSON.parse(sessionStorage.getItem("loginKey"));
 function LoginData(e) {
   e.preventDefault();
   console.log("hi");
@@ -35,6 +35,8 @@ function LoginData(e) {
   }
   if (flag) {
     alert("Login successfully");
+    loginKey=true;
+    sessionStorage.setItem("loginKey", JSON.stringify(loginKey));
      window.location.href="../html/home.html"
     console.log(loggedUser);
   } else {
