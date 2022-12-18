@@ -43,7 +43,9 @@ body{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
+#signOut{
+    display: none;
+}
 @media all and (min-width:200px) and (max-width:750px){
     #Navbar {
         margin-bottom: 110px;

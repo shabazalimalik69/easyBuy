@@ -10,7 +10,7 @@ body{
 }
 #form {
   border: 1px solid;
-  width: 30%;
+  width: 40%;
   margin: auto;
   margin-top: 10rem;
   padding-top: 1rem;
@@ -29,8 +29,40 @@ body{
   margin-left: 2vw;
 }
 #form > input{
-    width:20vw;
+    width:80%;
+    border-radius: 5px;
+    padding: 4px;
 }
 #count{
   display: none;
+}
+#signOut{
+  display: none;
+}
+@media all and (min-width:200px) and (max-width:750px){
+  #form {
+    border: 1px solid;
+    width: 80%;
+    margin: auto;
+    margin-top: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+     background-color: rgb(192, 102, 151);
+    box-shadow: rgba(142, 5, 72, 0.4) 0px 0px 0px 2px,
+      rgba(215, 35, 155, 0.65) 0px 4px 6px -1px,
+      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 0.3rem;
+    opacity: 0.75;
+    margin-bottom: 300px;
+  }
+  #form > label,
+  #form > input {
+    font-size: 14px;
+    margin-left: 2vw;
+    border-radius: 5px;
+    padding: 4px;
+  }
+  #form > input{
+      width:80%;
+  }
 }

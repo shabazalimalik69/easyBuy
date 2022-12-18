@@ -12,7 +12,7 @@ body {
 }
 #form {
   border: 1px solid;
-  width: 30%;
+  width: 40%;
  display: flex;
  flex-direction: column;
  justify-content: flex-start;
@@ -34,9 +34,11 @@ body {
   margin-left: 2vw;
 }
 #form > input {
-  width: 20vw;
+  width: 80%;
   margin-top:clamp(0.3rem, 2vw, 0.6rem);
   margin-bottom:clamp(0.3rem, 2vw, 0.6rem);
+  border-radius: 5px;
+  padding: 4px;
 }
 #create {
   font-size: clamp(0.5rem, 2vw, 1.3rem);
@@ -46,4 +48,45 @@ body {
 }
 #count{
   display: none;
+}
+#signOut{
+  display: none;
+}
+@media all and (min-width:200px) and (max-width:750px){
+  #form {
+    border: 1px solid;
+    width: 80%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+    margin: auto;
+    margin-top: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: rgb(162, 162, 215);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+      rgba(73, 94, 118, 0.65) 0px 4px 6px -1px,
+      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+      border-radius: 0.3rem;
+   opacity:0.75;
+   margin-bottom: 300px;
+  }
+  #form > label,
+  #form > input {
+    font-size: 14px;
+    margin-left: 2vw;
+  }
+  #form > input {
+    width: 80%;
+    margin-top:clamp(0.3rem, 2vw, 0.6rem);
+    margin-bottom:clamp(0.3rem, 2vw, 0.6rem);
+    border-radius: 5px;
+    padding: 4px;
+  }
+  #create {
+    font-size: 14px;
+    margin-left: 2vw;
+    padding-top:clamp(0.3rem, 2vw, 0.6rem);
+    color: black;
+  }
 }

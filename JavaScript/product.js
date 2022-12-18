@@ -29,7 +29,7 @@ let cartArray = JSON.parse(localStorage.getItem('cartData')) || [];
   try {
     let res = await fetch("https://easybuybackend-production.up.railway.app/products");
     let data = await res.json();
-    console.log(data)
+    //console.log(data)
     document.getElementById('sortByPrice').addEventListener('click',()=>{
       sortByPriceFun(data)
     });
@@ -83,7 +83,7 @@ if (loginKey) {
        }
        return 0;
      })
-     console.log(ascData)
+     //console.log(ascData)
      displayData(ascData)
    }
   else if(sortedValue==='desc'){
@@ -98,7 +98,7 @@ if (loginKey) {
            }
            return 0;
     })
-    console.log(descData)
+    //console.log(descData)
     displayData(descData)
   }
  

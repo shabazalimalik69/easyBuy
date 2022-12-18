@@ -23,14 +23,14 @@ form.addEventListener("submit", LoginData);
 let array = JSON.parse(localStorage.getItem("clientData"));
 let loggedUser = JSON.parse(sessionStorage.getItem("loggedUser")) || [];
 let loginKey = JSON.parse(sessionStorage.getItem("loginKey"));
-if (loginKey) {
-  document.getElementById("signOut").addEventListener("click", signOutFun);
-  function signOutFun() {
-    console.log("logout");
-    loginKey = false;
-    sessionStorage.setItem("loginKey", JSON.stringify(loginKey));
-  }
-}
+// if (loginKey) {
+//   document.getElementById("signOut").addEventListener("click", signOutFun);
+  // function logOut() {
+  //   console.log("logout");
+  //   loginKey = false;
+  //   sessionStorage.setItem("loginKey", JSON.stringify(loginKey));
+  // }
+// }
 
 function LoginData(e) {
   e.preventDefault();
