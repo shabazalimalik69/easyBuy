@@ -4,18 +4,9 @@
 /* Footer Section end  */
 #fcontainer {
   width: 100%;
-  height: 500px;
+  /* height: 100px; */
   /* background-color: lightgray; */
 }
-
-#top-s {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  font-size: 20px;
-  justify-content: space-evenly;
-}
-
 #footer.links {
   width: 25%;
   height: 200px;
@@ -90,14 +81,6 @@
 }
 
 @media all and (min-width: 426px) and (max-width: 720px) {
-  #top-s {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    width: 90%;
-    margin: auto;
-    padding-left: 25px;
-  }
   #scontainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -121,7 +104,7 @@
   }
   #footer .last {
     width: 90%;
-    height: 200px;
+    /* height: 200px; */
   }
   #footer .last > input {
     width: max-content;
@@ -131,20 +114,14 @@
   }
 }
 @media all and (min-width: 200px) and (max-width: 426px) {
-  #top-s {
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 15px;
-    margin: auto;
-     padding-left: 25px;
-  }
   #scontainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 15px;
     width: 90%;
+    /* border: 1px solid red; */
     margin: auto;
+    margin-top: 20px;
   }
   .last {
     margin-top: 15px;
@@ -169,5 +146,12 @@
     height: 17px;
     padding: 5px;
     margin-bottom: 15px;
+  }
+  #tcontainer {
+    margin-top: -10px;
+    width: 100%;
+    height: max-content;
+    margin: auto;
+    /* border: 1px solid; */
   }
 }
