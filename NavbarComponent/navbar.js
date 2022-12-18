@@ -14,7 +14,7 @@ const navbar = () => {
                   <li><a href="product.html">Products</a></li>
                   <li><a id="signup" href="signup.html">Signup</a></li>
                   <li><a id="login" href="login.html">Login</a></li>
-                  <li><a id="signOut" onclick="logOut">Logout</a></li>
+                  <li><a id="signOut">Logout</a></li>
 
                   <li id="cart"><a href="cart.html">Cart&nbsp&nbsp</a><p id='count' style="margin-top:5px" >0</p></li>
                </ul>
