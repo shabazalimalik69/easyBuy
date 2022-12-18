@@ -12,7 +12,12 @@ body {
 #cartContainer {
   width: 100%;
 }
-
+#signup{
+    display: none;
+}
+#login{
+    display:none;
+}
 .button1 {
   display: block;
   margin: auto;

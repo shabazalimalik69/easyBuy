@@ -1,6 +1,8 @@
 import {navbar} from "../NavbarComponent/navbar.js"
 document.getElementById("Navbar").innerHTML = navbar()
 
+import { footer } from "../NavbarComponent/footer.js";
+document.getElementById("footer").innerHTML = footer();
 
  const navToggler = document.querySelector(".hamburger");
  navToggler.addEventListener("click", navToggle);

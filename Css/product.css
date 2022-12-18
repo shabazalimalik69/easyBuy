@@ -38,6 +38,12 @@ h4,p{
     padding: 10px;
     border-radius: 5px;
 }
+#signup{
+    display: none;
+}
+#login{
+    display:none;
+}
 @media all and (min-width:426px) and (max-width:850px){
     #productContainer{
         width: 80%;
@@ -54,7 +60,7 @@ h4,p{
         justify-content: space-around;
     }
 }
-@media all and (min-width:200px) and (max-width:750px){
+@media all and (min-width:200px) and (max-width:426px){
     #productContainer{
         width: 80%;
         display: grid;

@@ -1,0 +1,173 @@
+#footer {
+  margin-top: 100px;
+}
+/* Footer Section end  */
+#fcontainer {
+  width: 100%;
+  height: 500px;
+  /* background-color: lightgray; */
+}
+
+#top-s {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-evenly;
+}
+
+#footer.links {
+  width: 25%;
+  height: 200px;
+}
+
+#footer .last {
+  width: 30%;
+  height: 200px;
+}
+
+#scontainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#tcontainer {
+  margin-top: 40px;
+  width: 100%;
+  height: 150px;
+}
+
+#scontainer .links > div > a {
+  color: black;
+  text-decoration: none;
+}
+
+#scontainer .links > div {
+  margin-top: 20px;
+  padding: 0px 15px 0px 15px;
+}
+
+#tcontainer > div > img {
+  width: 20%;
+}
+
+#tcontainer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .last > input {
+  width: 75%;
+  height: 35px;
+  margin-bottom: 15px;
+}
+
+#footer::placeholder {
+  font-size: 17px;
+}
+
+.last > button {
+  width: 77%;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+
+#container3 > div {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+#container3 {
+  display: grid;
+  margin: auto 20px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+@media all and (min-width: 426px) and (max-width: 720px) {
+  #top-s {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 90%;
+    margin: auto;
+    padding-left: 25px;
+  }
+  #scontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 90%;
+    margin: auto;
+  }
+  .last {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  .last > button {
+    width: max-content;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  #subscribe {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  #footer .last {
+    width: 90%;
+    height: 200px;
+  }
+  #footer .last > input {
+    width: max-content;
+    height: 17px;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+}
+@media all and (min-width: 200px) and (max-width: 426px) {
+  #top-s {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    margin: auto;
+     padding-left: 25px;
+  }
+  #scontainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    width: 90%;
+    margin: auto;
+  }
+  .last {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  .last > button {
+    width: max-content;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  #subscribe {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  #footer .last {
+    width: 90%;
+    height: 200px;
+  }
+  #footer .last > input {
+    width: max-content;
+    height: 17px;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+}

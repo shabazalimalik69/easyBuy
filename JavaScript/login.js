@@ -1,6 +1,9 @@
 import { navbar } from "../NavbarComponent/navbar.js";
 document.getElementById("Navbar").innerHTML = navbar();
 
+import { footer } from "../NavbarComponent/footer.js";
+document.getElementById("footer").innerHTML = footer();
+
 const navToggler = document.querySelector(".hamburger");
 navToggler.addEventListener("click", navToggle);
 
@@ -20,6 +23,15 @@ form.addEventListener("submit", LoginData);
 let array = JSON.parse(localStorage.getItem("clientData"));
 let loggedUser = JSON.parse(sessionStorage.getItem("loggedUser")) || [];
 let loginKey = JSON.parse(sessionStorage.getItem("loginKey"));
+if (loginKey) {
+  document.getElementById("signOut").addEventListener("click", signOutFun);
+  function signOutFun() {
+    console.log("logout");
+    loginKey = false;
+    sessionStorage.setItem("loginKey", JSON.stringify(loginKey));
+  }
+}
+
 function LoginData(e) {
   e.preventDefault();
   console.log("hi");

@@ -6,8 +6,6 @@
 }
 body {
   background-image: url("https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 #Navbar {
   margin-bottom: 80px;
@@ -28,6 +26,7 @@ body {
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     border-radius: 0.3rem;
  opacity:0.75;
+ margin-bottom: 300px;
 }
 #form > label,
 #form > input {
