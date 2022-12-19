@@ -1,6 +1,18 @@
 import {navbar} from "../NavbarComponent/navbar.js"
 document.getElementById("Navbar").innerHTML = navbar()
 
+let loginKey = JSON.parse(sessionStorage.getItem("loginKey"));
+function logOut() {
+  loginKey = false;
+  sessionStorage.setItem("loginKey", JSON.stringify(loginKey));
+  window.location.href = "../html/login.html"
+}
+if (loginKey) {
+  document.getElementById("signOut").addEventListener("click", logOut);
+}
+let cartQty =JSON.parse(localStorage.getItem("cartQuantity"))||[];
+//console.log(cartQty[0])
+document.getElementById("count").innerText = cartQty[0];
 let paymentArray = JSON.parse(localStorage.getItem("paymentData"));
 
 document.getElementById("title").innerText ="Title: "+ paymentArray[0].title;
@@ -25,6 +37,3 @@ const paymentSubmitFun = (e)=>{
      window.location.href = 'home.html'
 }
 document.getElementById("form").addEventListener("submit",paymentSubmitFun);
-let cartQty =JSON.parse(localStorage.getItem("cartQuantity"))||[];
-//console.log(cartQty[0])
-document.getElementById("count").innerText = cartQty[0];

@@ -35,7 +35,15 @@ body{
     margin-bottom: 10px;
     color:rgb(125, 196, 125)
   }
-
+  #count{
+    display: none;
+  }
+  #signUp{
+    display: none;
+  }
+  #login{
+    display: none;
+  }
   @media all and (min-width: 426px) and (max-width: 850px) {
     #form {
       width:80%;
