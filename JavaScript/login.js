@@ -35,10 +35,9 @@ form.addEventListener("submit", LoginData);
 let array = JSON.parse(localStorage.getItem("clientData"));
 let loggedUser = JSON.parse(sessionStorage.getItem("loggedUser")) || [];
 
-
 function LoginData(e) {
   e.preventDefault();
-  console.log("hi");
+  //console.log("hi");
   let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
   let flag = false;
