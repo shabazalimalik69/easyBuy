@@ -30,7 +30,7 @@ Tech Stacks Used:
       <img src="../images/signup.png" >
 
 * Login Page
- <img src="../images/login.png" >
+ Screenshot (1174).png
 
 * Product Page
   <img src="images/product.png" />
