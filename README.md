@@ -1,6 +1,6 @@
 # easyBuy
-**Logo
- <img src="../images/easyBuy.jpeg" >
+**Logo<br/>
+ <img src="../images/easyBuy.jpeg" />
  
 ##Contributors:
 * Sombir (sombir5)
@@ -33,7 +33,7 @@ Tech Stacks Used:
  <img src="../images/login.png" >
 
 * Product Page
-  <img src="../images/product.png" />
+  <img src="./images/product.png" />
 
 * Cart Page
   <img src="../images/cart.png" />
