@@ -1,10 +1,10 @@
 # easyBuy
 **Logo
- <img src="../images/easyBuy.jpeg>
+ <img src="../images/easyBuy.jpeg" >
  
 ##Contributors:
-Sombir
-Shabaz Ali Malik
+* Sombir (sombir5)
+* Shabaz Ali Malik (shabazalimalik69)
 
 
 Tech Stacks Used:
@@ -18,7 +18,7 @@ Tech Stacks Used:
 * Navbar
      * Navbar consists of logo of website, Home button Product button, Cart button.
      * It also consists of Login, SignUp and Logout Button.
-<img src="../images/navbar.png>
+<img src="../images/navbar.png">
 
 * Home Page
      * Home Page has all the information of the website.
@@ -27,18 +27,18 @@ Tech Stacks Used:
 
 * Signup Page
      * The SignUp page has a from by filling which a new user can create an account and if the user has already an account then he can directly log in.
-      <img src="../images/signup.png/>
+      <img src="../images/signup.png" >
 
 * Login Page
- <img src="../images/login.png/>
+ <img src="../images/login.png" >
 
 * Product Page
-  <img src="../images/product.png/>
+  <img src="../images/product.png" />
 
 * Cart Page
-  <img src="../images/cart.png/>
+  <img src="../images/cart.png" />
 
 * Payment Page
-  <img src="../images/payment.png/>
+  <img src="../images/payment.png" />
 
     
